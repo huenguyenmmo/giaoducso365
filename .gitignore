@@ -1,33 +1,55 @@
-# dependencies
+# Thư mục thư viện (Dependencies)
 /node_modules
 /.pnp
 .pnp.js
+.yarn/
 
-# testing
-/coverage
-
-# next.js
+# Kết quả biên dịch và cache Next.js (Build & Cache)
 /.next/
 /out/
+/build/
+/dist/
 
-# production
-/build
-
-# misc
-.DS_Store
-*.pem
-
-# debug
+# File nhật ký và log lỗi (Logs)
+logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 
-# local env files
-.env*.local
+# File môi trường và bảo mật (Environment variables & Secrets)
 .env
+.env*.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
 
-# vercel
+# Thư mục IDE và Trình soạn thảo (Editor & IDE)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# File rác hệ điều hành (OS metadata)
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Trình xem trước Vercel (Vercel)
 .vercel
 
-# typescript
+# TypeScript
 *.tsbuildinfo
