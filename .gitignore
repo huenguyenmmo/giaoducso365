@@ -10,6 +10,14 @@
 /build/
 /dist/
 
+# Python Cache & Môi trường ảo
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+
 # File nhật ký và log lỗi (Logs)
 logs
 *.log
@@ -25,6 +33,7 @@ pnpm-debug.log*
 .env.test.local
 .env.production.local
 *.pem
+*.key
 
 # Thư mục IDE và Trình soạn thảo (Editor & IDE)
 .vscode/*
@@ -48,8 +57,9 @@ pnpm-debug.log*
 ehthumbs.db
 Thumbs.db
 
-# Trình xem trước Vercel (Vercel)
+# Trình xem trước Vercel & Cache Turbo (Vercel & Turbo)
 .vercel
+.turbo
 
 # TypeScript
 *.tsbuildinfo
